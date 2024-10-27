@@ -18,14 +18,14 @@
     height: 5px; /* Height of the rectangle */
     margin-right: 10px; /* Spacing between rectangle and title */
     position: absolute;
-    left: -20px;}
+    left: -20px;
+}
 
-.titleContainer h2{
+.titleContainer h2 {
     font-size: 2.5rem;
     color: #00615f;
     margin: 0;
     margin-left: 100px;
-
 }
 
 .header h2 {
@@ -46,7 +46,7 @@
     margin-right: auto;
 }
 
-/* The rest of your existing CSS remains unchanged */
+/* Info grid styling */
 .infoGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -94,4 +94,53 @@
     font-size: 14px !important;
     color: #999 !important;
     margin-top: 10px !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .infoGrid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        padding-left: 0; /* Remove padding on the left */
+    }
+    .titleContainer h2{
+        font-size: 1.5rem !important;
+    }
+
+    .infoItem {
+        width: auto; /* Allow width to adjust */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .header p {
+        font-size: 1rem; /* Smaller font size for mobile */
+        max-width: fit-content;
+    }
+
+    .header h2 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .titleContainer h2 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .icon {
+        font-size: 2rem; /* Smaller icon size for mobile */
+    }
+
+    .infoItem h3 {
+        font-size: 20px; /* Smaller heading size for mobile */
+    }
+
+    .infoItem p {
+        font-size: 14px; /* Smaller paragraph size for mobile */
+    }
+
+    .secondline {
+        font-size: 18px !important; /* Smaller size for second line */
+    }
+
+    .source {
+        font-size: 12px !important; /* Smaller size for source */
+    }
 }

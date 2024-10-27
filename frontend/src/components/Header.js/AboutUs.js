@@ -68,14 +68,15 @@ export default function AboutUs() {
             {/* Impact Stats */}
             <div className={styles.impactStats}>
                 <div className={styles.stat}>
-                    <h3>{totalMeals}2+</h3>
+                    <h3>{totalMeals}+</h3>
                     <p>Meals Donated</p>
                 </div>
                 <div className={styles.stat}>
-                    <h3>{totalCharities}1+</h3>
+                    <h3>{totalCharities}+</h3>
                     <p>Charities Helped</p>
                 </div>
             </div>
+
 
             {/* Why Use FoodLink */}
             <div ref={topTextRef} className={styles.topText}>
@@ -83,6 +84,7 @@ export default function AboutUs() {
                 <h2 className={styles.topTextFL}>Food Link</h2>
             </div>
 
+            <div classNmae={styles.poptext}>
             {/* Left Text with Earth Icon */}
             <div ref={leftTextRef} className={styles.textLeft}>
                 <p><i className="fas fa-globe"></i> Help the environment by reducing food waste</p>
@@ -91,6 +93,7 @@ export default function AboutUs() {
             {/* Right Text with Pizza Icon */}
             <div ref={rightTextRef} className={styles.textRight}>
                 <p>Save food near you <i className="fas fa-pizza-slice"></i></p>
+            </div>
             </div>
 
             {/* Image */}

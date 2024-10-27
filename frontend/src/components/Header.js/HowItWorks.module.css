@@ -88,3 +88,36 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .stepsContainer {
+        flex-direction: column; /* Change flex direction to column for mobile */
+        align-items: center; /* Center items in the column layout */
+    }
+
+    /* Optionally adjust the image size for mobile */
+    .image {
+        width: 100vw; /* Make the image responsive */
+        height: auto;
+        max-width: 640px; /* Set a max width for larger screens */
+        margin: 20px 0px 80px 0;        
+    }
+
+    /* Ensure the steps columns are full width on mobile */
+    .stepsColumn {
+        width: 100%; /* Make columns full width */
+    }
+    .titleContainer .title{
+        font-size: 2rem;
+    }
+
+    .stepsColumn h3{
+        font-size: 1.7rem;
+    }
+    .stepList li {
+        font-size: 1.1rem;
+    }
+
+}
+

@@ -68,11 +68,11 @@ export default function AboutUs() {
             {/* Impact Stats */}
             <div className={styles.impactStats}>
                 <div className={styles.stat}>
-                    <h3>{totalMeals}+</h3>
+                    <h3>21+</h3>
                     <p>Meals Donated</p>
                 </div>
                 <div className={styles.stat}>
-                    <h3>{totalCharities}+</h3>
+                    <h3>4+</h3>
                     <p>Charities Helped</p>
                 </div>
             </div>

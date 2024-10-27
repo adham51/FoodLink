@@ -72,7 +72,7 @@ export default function AboutUs() {
                     <p>Meals Donated</p>
                 </div>
                 <div className={styles.stat}>
-                    <h3>{totalCharities}11+</h3>
+                    <h3>{totalCharities}4+</h3>
                     <p>Charities Helped</p>
                 </div>
             </div>

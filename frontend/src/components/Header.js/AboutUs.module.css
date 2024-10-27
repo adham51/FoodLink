@@ -191,7 +191,7 @@
     }
     .revealText {
         opacity: 1;
-        transform: translateY(-250px); /* Text slides up and appears in the correct position */
+        transform: translateY(-220px); /* Text slides up and appears in the correct position */
     }
 
     .revealImage {
@@ -206,7 +206,7 @@
 
     .revealRightLeft {
         opacity: 1;
-        transform: translateY(-60px); /* Text slides up and appears in the correct position */
+        transform: translateY(-40px); /* Text slides up and appears in the correct position */
     }
     
     .impactStats .stat h3 {
@@ -271,6 +271,55 @@
     .textRight p{
         font-size: 1.3rem;
     }
+}
 
+    @media (max-width: 383px) {
+        .missionTitle h2 {
+            font-size: 1.7rem;
+        }
+        .missionText p {
+            font-size: 1.3rem;
+        }
+        .topText h2{
+            font-size: 1.4rem;
+        }
+        .aboutUs .topText {
+            margin-bottom: 120px; /* Adjust this value as needed */
+        }
+        .topText .topTextFL{
+            font-size: 2.2rem;
+        }
+        .revealText {
+            opacity: 1;
+            transform: translateY(-210px); /* Text slides up and appears in the correct position */
+        }
+    
+        .revealImage {
+            opacity: 1;
+            transform: translateY(-7px); /* Image slides up and appears */
+        }
+    
+        .missionImage {
+            width: 350px;
+            height: auto;
+        }
+    
+        .revealRightLeft {
+            opacity: 1;
+            transform: translateY(0px); /* Text slides up and appears in the correct position */
+        }
+        
+        .impactStats .stat h3 {
+            font-size: 1.3rem;
+        }
+        .textLeft p{
+            font-size: 1.3rem;
+        }
+        .textRight{
+            margin-top: 80px;    
+        }
+        .textRight p{
+            font-size: 1.3rem;
+        }
 
 }

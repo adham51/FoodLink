@@ -54,3 +54,27 @@
     right: -22px; /* Adjust this to move the arrow on hover without disappearing */
     color: #e3d659; /* Change this to greenish-yellowish on hover */
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .callToAction {
+        flex-direction: column; /* Stack the left and right sections */
+        height: auto; /* Allow height to adjust */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .left {
+        font-size: 24px; /* Smaller font size for mobile */
+        text-align: center; /* Center text on mobile */
+        margin-bottom: 10px; /* Add margin for spacing */
+    }
+
+    .right {
+        padding: 8px 16px; /* Smaller padding for mobile */
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .arrow {
+        font-size: 24px; /* Smaller arrow size for mobile */
+    }
+}

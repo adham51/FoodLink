@@ -117,3 +117,32 @@
     text-transform: uppercase;
 }
 
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .heroContent span {
+        font-size: 2rem; /* Reduce font size for smaller devices */
+        margin-bottom: 30px; /* Adjust spacing below headline */
+    }
+    .subheadline {
+        font-size: 1.2rem; /* Smaller subheadline for tablets */
+    }
+    .buttonGroup {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 10px; /* Reduce gap between buttons */
+        margin-top: 10px; /* Adjust margin for better spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .heroContent span {
+        font-size: 1.2rem; /* Further reduce font size for mobile */
+    }
+    .subheadline {
+        font-size: 1rem; /* Smaller subheadline for very small devices */
+    }
+    .btnPrimary,
+    .btnSecondary {
+        width: 60%; /* Make buttons full width on mobile */
+    }
+}
+

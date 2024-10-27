@@ -77,12 +77,14 @@ export default function AboutUs() {
                 </div>
             </div>
 
+
             {/* Why Use FoodLink */}
             <div ref={topTextRef} className={styles.topText}>
                 <h2>Why Use</h2>
                 <h2 className={styles.topTextFL}>Food Link</h2>
             </div>
 
+            <div classNmae={styles.poptext}>
             {/* Left Text with Earth Icon */}
             <div ref={leftTextRef} className={styles.textLeft}>
                 <p><i className="fas fa-globe"></i> Help the environment by reducing food waste</p>
@@ -91,6 +93,7 @@ export default function AboutUs() {
             {/* Right Text with Pizza Icon */}
             <div ref={rightTextRef} className={styles.textRight}>
                 <p>Save food near you <i className="fas fa-pizza-slice"></i></p>
+            </div>
             </div>
 
             {/* Image */}

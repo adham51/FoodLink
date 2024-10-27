@@ -55,7 +55,6 @@
     gap: 80px;
     margin-top: 40px;
     z-index: 0;
-
 }
 
 /* Testimonial Card */
@@ -68,9 +67,9 @@
     height: 450px; 
     text-align: left; 
     display: flex;
-    /* flex-direction: column;
-    justify-content: flex-start; 
-    /* position: relative;  */
+    flex-direction: column; /* Ensure card contents stack */
+    justify-content: space-between; /* Space contents evenly */
+    position: relative; /* Make position relative for absolute children */
     z-index: 0;
 }
 
@@ -78,7 +77,7 @@
 .cardContent {
     position: relative; /* Allows absolute positioning of children */
     padding-bottom: 70px; /* Space for personInfo */
-    height: calc(100% - 70px); /* Adjust to fit the fixed height minus personInfo */
+    flex-grow: 1; /* Allow card content to grow */
 }
 
 .cardContent h4 {
@@ -87,14 +86,19 @@
     margin-bottom: 20px;
 }
 
+/* Quotation Icon */
 .quoteIcon {
     font-size: 4rem;
     color: rgba(0, 0, 0, 0.2);
+    width: 170px; /* Keep original size */
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: -120px; /* Keep original positioning */
+    right: -100px; /* Keep original positioning */
+    opacity: 0.2; /* Keep original opacity */
+    z-index: 10; /* Ensure it's on top of other elements */
 }
 
+/* Card Content Paragraph */
 .cardContent p {
     font-size: 1.1rem;
     color: #2A1150;
@@ -105,8 +109,8 @@
 .personInfo {
     display: flex;
     align-items: center;
-    position: absolute; /* Absolute positioning to fix it within the card */
-    bottom: -75px; /* Positioning at the bottom (adjusted) */
+    position: absolute; /* Fixed positioning within the card */
+    bottom: 20px; /* Keep it at the bottom of the card */
     left: 36px; /* Align to the left */
     width: calc(100% - 72px); /* Full width minus margins */
 }
@@ -143,13 +147,44 @@
     color: #666;
 }
 
-/* Aligning the name and role */
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .testimonialsGrid {
+        flex-direction: column; /* Stack cards in a column */
+        gap: 20px; /* Reduce gap between cards */
+    }
 
-.quoteIcon {
-    width: 170px; /* Adjust the size of the quote icon as needed */
-    position: absolute;
-    top: -120px; /* Positioning from the top */
-    right: -90px; /* Positioning from the right */
-    opacity: 0.2; /* Match the appearance you want */
-    z-index: 10; /* Ensure it's on top of other elements */
+    .testimonialCard {
+        width: 100%; /* Make cards full width */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Reduce padding for mobile */
+    }
+
+    .cardContent h4 {
+        font-size: 1.2rem; /* Further reduce heading font size for mobile */
+    }
+
+    .cardContent p {
+        font-size: 0.9rem; /* Further reduce paragraph font size for mobile */
+    }
+    
+    .header h3 {
+        font-size: 1.5rem; /* Adjust header font size for mobile */
+        margin-bottom: 40px; /* Reduce margin */
+    }
+
+    .titleContainer h2 {
+        font-size: 2rem; /* Adjust title font size for mobile */
+    }
+
+    .quoteIcon {
+        font-size: 4rem;
+        color: rgba(0, 0, 0, 0.2);
+        width: 100px; /* Keep original size */
+        position: absolute;
+        top: -60px; /* Keep original positioning */
+        right: -50px; /* Keep original positioning */
+        opacity: 0.2; /* Keep original opacity */
+        z-index: 10; /* Ensure it's on top of other elements */
+    }
 }

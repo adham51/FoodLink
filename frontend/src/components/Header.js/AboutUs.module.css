@@ -273,7 +273,7 @@
     }
 }
 
-    @media (max-width: 383px) {
+    @media (max-width: 390px) {
         .missionTitle h2 {
             font-size: 1.7rem;
         }
